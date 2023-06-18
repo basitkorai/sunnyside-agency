@@ -51,6 +51,10 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+a {
+  text-decoration: none;
+}
+
 .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
@@ -101,6 +105,11 @@ h2 {
 }
 .services p {
   padding-bottom: 2rem;
+}
+
+.article a {
+  font-family: "Fraunces";
+  color: #000000;
 }
 
 .header {
