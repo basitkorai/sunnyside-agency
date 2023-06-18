@@ -1,0 +1,49 @@
+@use '../utilities/' as u;
+
+.testimonials {
+    // background-color: cadetblue;
+    padding-block: 4rem;
+    padding-bottom: 2rem;
+
+
+    &__title {
+        font-size: clamp(0.5rem, 0.4rem + 3vw, 3.8rem);
+        text-transform: uppercase;
+        color: grey;
+        letter-spacing: 2px;
+    }
+
+    &__review {
+        padding: 2rem 1.3rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // outline: 1px dashed;
+
+        .avatar {
+            width: 4.2rem;
+            height: 4.2rem;
+            border-radius: 5rem;
+            overflow: hidden;
+            object-fit: contain;
+        }
+
+        &__feedback {
+            margin-top: 2rem
+        }
+
+        &__client {
+            font-family: u.$ff-accent;
+            margin-top: 2rem;
+        }
+
+        &__client-role {
+            margin-top: 0.2rem;
+            font-size: 0.85rem;
+            color: grey;
+        }
+    }
+
+
+}

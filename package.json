@@ -1,0 +1,13 @@
+{
+  "name": "sunnyside-agency-landing-page",
+  "version": "1.0.0",
+  "description": "This is a solution to the Frontend Mentor challenge \"Sunnyside Agency Landing Page\"",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass --watch sass:dist"
+  },
+  "keywords": ["sunnyside-agency", "landing-page"],
+  "author": "Basit Korai",
+  "license": "MIT"
+}
+
