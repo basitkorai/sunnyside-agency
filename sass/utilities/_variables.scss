@@ -1,0 +1,30 @@
+// Font-Family
+$ff-body : 'Barlow', sans-serif;
+$ff-accent: 'Fraunces';
+
+// Font-Weight
+$fw-regular: 600;
+$fw-bold: 700;
+$fw-bolder: 900;
+
+// Font-Size
+$fs-body: 1.125rem;
+$fs-title: 2rem;
+
+// Colors
+$clr-red: hsl(7, 99%, 70%);
+$clr-yellow: hsl(51, 100%, 49%);
+$clr-primary-300: hsl(168, 34%, 41%); //(footer)
+$clr-primary-400: hsl(167, 40%, 24%); //(graphic design text)
+$clr-primary-500: hsl(198, 62%, 26%); // (photography text)
+
+$clr-secondary-200: hsl(210, 4%, 67%);
+$clr-secondary-300: hsl(232, 10%, 55%);
+$clr-secondary-400: hsl(213, 9%, 39%);
+$clr-secondary-500: hsl(212, 27%, 19%);
+$clr-white: hsl(0, 0%, 100%);
+$clr-footer: hsl(167, 44%, 70%);
+
+// Screensizes
+$screen-mobile: 23.4375rem; // 375px
+$screen-desktop: 90rem; // 1440px

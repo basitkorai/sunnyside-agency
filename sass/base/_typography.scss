@@ -1,0 +1,40 @@
+@use "../utilities" as u;
+
+body {
+  font-size: u.rem(18);
+}
+
+h1,
+h2,
+h3 {
+  font-family: u.$ff-accent;
+  line-height: normal;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: clamp(2.5rem, 1rem + 4vw, 3.8rem);
+  text-transform: uppercase;
+  margin-top: 3rem;
+  letter-spacing: 0.3rem;
+  z-index: 4;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 1rem + 4vw, 3.8rem);
+  margin-inline: 1rem;
+}
+
+.services {
+  h2 {
+    font-size: clamp(1.2rem, 1rem + 4vw, 3.8rem);
+    margin-inline: 1rem;
+  }
+
+  p {
+    padding-bottom: 2rem;
+  }
+}
+
+

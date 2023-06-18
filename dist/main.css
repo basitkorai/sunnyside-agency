@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"); /*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  font-size: 1.125rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces";
+  line-height: normal;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: clamp(2.5rem, 1rem + 4vw, 3.8rem);
+  text-transform: uppercase;
+  margin-top: 3rem;
+  letter-spacing: 0.3rem;
+  z-index: 4;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 1rem + 4vw, 3.8rem);
+  margin-inline: 1rem;
+}
+
+.services h2 {
+  font-size: clamp(1.2rem, 1rem + 4vw, 3.8rem);
+  margin-inline: 1rem;
+}
+.services p {
+  padding-bottom: 2rem;
+}
+
+.header {
+  background: hsl(200, 97%, 61%);
+  position: relative;
+}
+.header__navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.8rem;
+}
+.header__navigation-bar .nav-list {
+  background-color: brown;
+  position: absolute;
+  right: 2.5rem;
+  top: -15rem;
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid yellow;
+  padding: 1rem;
+}
+.header__navigation-bar * {
+  z-index: 9;
+}
+.header__hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__hero-section .arrow {
+  margin-top: 3rem;
+  z-index: 4;
+}
+.header__hero-section picture {
+  background: greenyellow;
+  margin-top: -25rem;
+}
+.header__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  display: grid;
+}
+article .column {
+  order: 1;
+  padding-block: 1.2rem;
+  text-align: center;
+}
+article .column * {
+  margin-top: 2rem;
+}
+article .column a {
+  margin-top: 3rem;
+}
+
+.services__photography {
+  background-image: url("../assets/images/mobile/image-photography.jpg");
+}
+.services__graphic-design {
+  background-image: url("../assets/images/mobile/image-graphic-design.jpg");
+}
+
+.services > * {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 592px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-inline: 1rem;
+}
+
+.image-gallery {
+  display: flex;
+}
+
+footer {
+  background-color: hsl(167, 44%, 70%);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-logo {
+  margin-inline: auto;
+  margin-bottom: 3rem;
+}
+footer .secondary-navigation .nav-list {
+  padding: 0;
+  justify-content: space-between;
+  width: 100%;
+  gap: 3rem;
+}
+footer .secondary-navigation a {
+  color: hsl(213, 9%, 39%);
+}
+footer .social-list {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  justify-content: center;
+  margin-top: 3rem;
+}
+footer .social-list li {
+  list-style-type: none;
+}
+footer .attribution {
+  text-align: center;
+  margin-top: 3rem;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+nav ul a {
+  text-decoration: none;
+}
+
+.testimonials {
+  padding-block: 4rem;
+  padding-bottom: 2rem;
+}
+.testimonials__title {
+  font-size: clamp(0.5rem, 0.4rem + 3vw, 3.8rem);
+  text-transform: uppercase;
+  color: grey;
+  letter-spacing: 2px;
+}
+.testimonials__review {
+  padding: 2rem 1.3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials__review .avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 5rem;
+  overflow: hidden;
+  object-fit: contain;
+}
+.testimonials__review__feedback {
+  margin-top: 2rem;
+}
+.testimonials__review__client {
+  font-family: "Fraunces";
+  margin-top: 2rem;
+}
+.testimonials__review__client-role {
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  color: grey;
+}
+
+.nav__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
