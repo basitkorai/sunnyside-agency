@@ -1,0 +1,56 @@
+@use '../utilities/' as u;
+
+.testimonials {
+    // background-color: cadetblue;
+    padding-block: 4rem;
+    padding-bottom: 3rem;
+
+
+    &__title {
+        font-size: clamp(0.5rem, 0.4rem + 3vw, 1.3rem);
+        text-transform: uppercase;
+        color: u.$clr-secondary-200;
+        letter-spacing: 2px;
+    }
+
+    &__review:nth-of-type(1) {
+        padding-top: u.rem(66);
+    }
+
+    &__review {
+        padding: 2rem 1.3rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // outline: 1px dashed;
+        max-width: u.rem(415);
+
+        .avatar {
+            width: 4.2rem;
+            height: 4.2rem;
+            border-radius: 5rem;
+            overflow: hidden;
+            object-fit: contain;
+        }
+
+        &__feedback {
+            margin-top: 2rem;
+            color: u.$clr-secondary-400;
+        }
+
+        &__client {
+            font-family: u.$ff-accent;
+            margin-top: 2rem;
+            color: u.$clr-secondary-500;
+        }
+
+        &__client-role {
+            margin-top: 0.2rem;
+            font-size: 0.85rem;
+            color: u.$clr-secondary-200;
+        }
+    }
+
+
+}
