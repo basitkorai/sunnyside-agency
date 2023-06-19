@@ -2,6 +2,10 @@
   background: hsl(200, 97%, 61%);
   position: relative;
 
+  svg {
+    color: blue;
+  }
+
   &__navigation-bar {
     display: flex;
     justify-content: space-between;
@@ -41,7 +45,7 @@
 
     picture {
         background: greenyellow;
-        margin-top: -25rem;
+        margin-top: -23rem;
     }
   }
 

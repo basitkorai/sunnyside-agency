@@ -11,6 +11,8 @@ footer {
   .footer-logo {
     margin-inline: auto;
     margin-bottom: 3rem;
+    // outline: 1px dashed;
+    scale: 1.5;
   }
 
   .secondary-navigation {
@@ -18,11 +20,16 @@ footer {
       padding: 0;
       justify-content: space-between;
       width: 100%;
-      gap: 3rem;
+      gap: 2rem;
     }
 
     a {
-      color: u.$clr-secondary-400;
+      color: u.$clr-primary-300;
+      transition: color 250ms ease-in;
+    }
+
+    a:hover {
+      color: u.$clr-white;
     }
   }
 

@@ -2,30 +2,80 @@
 
 .article {
   display: grid;
-  // grid-template-columns: 1fr 1fr;
+
   // outline: 1px solid;
 
+  .transform {
+    background-image: url('../assets/images/mobile/image-transform.jpg');
+  }
+
+  .transform, .stand-out {
+    padding-block: 10rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+  }
+
+  .stand-out {
+    background-image: url('../assets/images/mobile/image-stand-out.jpg');
+  }
+
   .column {
-    order: 1;
-    padding: 3.5rem 1.4rem;
-    text-align: center;
     color: u.$clr-secondary-500;
+    padding-inline: clamp(1rem, 5vw + 2rem, 10rem);
+    padding-block: clamp(3rem, 1vw + 1rem, 5rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     & * {
       margin-top: 2rem;
     }
 
     h2 {
-      margin-bottom: 3rem;
+      margin-bottom: 1.5rem;
     }
 
     p {
       color: u.$clr-primary-300;
+      margin-top: 0;
     }
 
     a {
-      margin-top: 3rem;
+      --clr-opacity: 40%;
+      margin-top: 2.5rem;
       text-transform: uppercase;
+      display: inline-block;
+      position: relative;
+      max-width: fit-content;
+      // padding: 1rem;
+      // outline: 1px solid;
+      margin-inline: auto;
+      // text-align: center;
+
+      &::after {
+        content: "";
+        width: 130px;
+        height: 10px;
+        background-color: hsl(51, 100%, 49%, var(--clr-opacity));
+        display: inline-block;
+        position: absolute;
+        bottom: 3px;
+        left: -8px;
+        z-index: -1;
+        border-radius: 50px;
+        transition: background-color 250ms ease-in;
+      }
+    }
+
+    #link-red::after {
+      background-color: hsl(7, 99%, 70%, var(--clr-opacity));
+    }
+
+    a:hover {
+      --clr-opacity: 100%;
     }
   }
 }
@@ -34,17 +84,20 @@
   &__photography {
     background-image: url("../assets/images/mobile/image-photography.jpg");
     color: u.$clr-primary-500;
+    padding-inline: clamp(3rem, 5vw + 3rem, 10rem);
+    padding-block: clamp(1rem, 1vh + 1rem, 5rem);
   }
 
   &__graphic-design {
     background-image: url("../assets/images/mobile/image-graphic-design.jpg");
     color: u.$clr-primary-400;
+    padding-inline: clamp(3rem, 5vw + 3rem, 10rem);
+    padding-block: clamp(0.5rem, 1vh + 1rem, 5rem);
   }
 }
 
 .services > * {
   background-size: cover;
-  // background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 592px;

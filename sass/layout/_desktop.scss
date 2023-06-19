@@ -1,0 +1,73 @@
+@use "../utilities/" as u;
+
+@media screen and (min-width: 750px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .column-transform {
+    order: 1;
+  }
+
+  .article {
+    .transform {
+      background-image: url("../assets/images/desktop/image-transform.jpg");
+    }
+
+    .stand-out {
+      background-image: url("../assets/images/desktop/image-stand-out.jpg");
+    }
+  }
+
+  .transform {
+    order: -0;
+  }
+
+  .column {
+    text-align: left;
+
+    h2 {
+      text-align: inherit;
+    }
+  }
+
+  .flex {
+    //  outline: 2px solid;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .transform {
+    background-image: url("../assets/images/desktop/image-transform.jpg");
+    min-height: 599px;
+  }
+
+  .stand-out {
+    background-image: url("../assets/images/desktop/image-stand-out.jpg");
+    min-height: 599px;
+  }
+
+  .services {
+    &__photography {
+      background-image: url("../assets/images/desktop/image-photography.jpg");
+      text-align: center;
+      order: 1;
+    }
+
+    &__graphic-design {
+      background-image: url("../assets/images/desktop/image-graphic-design.jpg");
+      text-align: center;
+    }
+  }
+
+  .image-gallery * {
+    width: 100%;
+  }
+
+  .testimonials {
+    &__review:nth-of-type(1) {
+      padding-top: 2rem;
+    }
+  }
+}
