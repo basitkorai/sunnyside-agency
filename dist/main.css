@@ -381,11 +381,17 @@ nav ul a {
   .article .stand-out {
     background-image: url("../assets/images/desktop/image-stand-out.jpg");
   }
+  .article .column {
+    align-items: start;
+  }
   .transform {
     order: 0;
   }
   .column {
     text-align: left;
+  }
+  .column a {
+    margin-right: auto;
   }
   .column h2 {
     text-align: inherit;

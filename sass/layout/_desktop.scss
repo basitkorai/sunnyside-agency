@@ -18,6 +18,10 @@
     .stand-out {
       background-image: url("../assets/images/desktop/image-stand-out.jpg");
     }
+
+    .column {
+      align-items: start;
+    }
   }
 
   .transform {
@@ -26,6 +30,10 @@
 
   .column {
     text-align: left;
+
+    a {
+      margin-right: auto;
+    }
 
     h2 {
       text-align: inherit;
