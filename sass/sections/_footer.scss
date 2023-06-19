@@ -42,6 +42,15 @@ footer {
 
     li {
       list-style-type: none;
+
+      a {
+        color: u.$clr-primary-300;
+        transition: color 250ms ease-in;
+      }
+
+      a:hover {
+        color: u.$clr-white;
+      }
     }
   }
 
