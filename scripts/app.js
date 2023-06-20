@@ -2,7 +2,6 @@
 const navbar = document.querySelector('#navbar');
 const navToggleBtn = navbar.querySelector('.nav__btn');
 const navlist = navbar.querySelector('.nav-list');
-// console.log(navlist);
 
 navToggleBtn.addEventListener("click", toggleNavbar);
 
