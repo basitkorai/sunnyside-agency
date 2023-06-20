@@ -403,6 +403,7 @@ nav ul a {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 0;
 }
 
 @media screen and (min-width: 750px) {
