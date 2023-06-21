@@ -1,7 +1,6 @@
 @use '../utilities/' as u;
 
 .testimonials {
-    // background-color: cadetblue;
     padding-block: 4rem;
     padding-bottom: 3rem;
 
@@ -33,7 +32,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        // outline: 1px dashed;
         max-width: u.rem(415);
 
         .avatar {

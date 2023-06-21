@@ -39,7 +39,6 @@
         }
 
         li {
-          // padding: 0.8em 1.5em;
           font-size: large;
           border-radius: 50px;
           transition: background-color 250ms ease-in-out;
@@ -64,7 +63,6 @@
           padding: 0.9rem 1.7em;
           font-family: u.$ff-accent;
           text-transform: uppercase;
-          // font-size: medium;
 
           a {
             color: u.$clr-secondary-500;
@@ -161,7 +159,7 @@
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
   .header {
     &__hero-section {
       position: relative;

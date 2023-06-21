@@ -45,9 +45,6 @@
       display: inline-block;
       position: relative;
       max-width: fit-content;
-      // padding: 1rem;
-      // outline: 1px solid;
-      // text-align: center;
 
       &::after {
         content: "";
@@ -98,5 +95,4 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-  // padding-inline: 1rem;
 }
