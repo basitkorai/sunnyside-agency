@@ -1,4 +1,4 @@
-@use '../utilities/' as u;
+@use "../utilities/" as u;
 
 .header {
   background: #3ebfff;
@@ -16,7 +16,6 @@
     .navbar {
       display: flex;
       justify-content: center;
-
     }
 
     .nav-list {
@@ -40,10 +39,7 @@
       transition: top 250ms ease-out;
       padding-left: 0;
 
-
-
       li {
-        // outline: 1px solid;
         width: fit-content;
         padding: 1rem 1.5rem;
         border-radius: 50px;
@@ -65,19 +61,16 @@
           color: u.$clr-secondary-500;
         }
       }
-
     }
 
     .nav-list::before {
-      content: '';
+      content: "";
       border: 20px solid transparent;
       border-top-color: var(--nav-color);
       position: absolute;
       top: 0rem;
       left: 98.5%;
       transform: translateX(-39%) translateY(-49%) rotate(-45deg);
-
-
     }
 
     .expanded {
@@ -96,12 +89,12 @@
     position: relative;
 
     .arrow {
-        z-index: 4;
-        height: calc(10vh + 5vw);
+      z-index: 4;
+      height: calc(10vh + 5vw);
     }
 
     picture {
-        margin-top: -23rem;
+      margin-top: -23rem;
     }
   }
 
