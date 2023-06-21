@@ -68,8 +68,8 @@
       border: 20px solid transparent;
       border-top-color: var(--nav-color);
       position: absolute;
-      top: 0rem;
-      left: 98.5%;
+      top: 0.5rem;
+      right: -35px;
       transform: translateX(-39%) translateY(-49%) rotate(-45deg);
     }
 
@@ -87,6 +87,10 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    background: url(../assets/images/mobile/image-header.jpg) no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    min-height: 80vh;
 
     .arrow {
       z-index: 4;
