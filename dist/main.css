@@ -168,6 +168,8 @@ h2 {
 .header__navigation-bar .nav-list li:hover {
   background-color: hsl(51, 100%, 49%);
   font-family: "Fraunces";
+  text-transform: uppercase;
+  font-size: medium;
 }
 .header__navigation-bar .nav-list li:hover a {
   color: hsl(212, 27%, 19%);
@@ -196,11 +198,8 @@ h2 {
 .header__hero-section .arrow {
   z-index: 4;
   height: calc(10vh + 5vw);
-  position: absolute;
-  bottom: calc(5rem + 15vw);
 }
 .header__hero-section picture {
-  background: greenyellow;
   margin-top: -23rem;
 }
 .header__logo-container {
@@ -396,8 +395,11 @@ footer .attribution {
   margin-top: 3rem;
 }
 footer .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(214, 45%, 44%);
   text-decoration: none;
+}
+footer .attribution a:hover {
+  color: yellow;
 }
 
 nav {
@@ -418,6 +420,15 @@ nav ul a {
   border: none;
   cursor: pointer;
   padding: 0;
+}
+
+.btn {
+  scale: 1;
+  transition: scale 2000ms ease-in-out;
+}
+
+.btn:active {
+  transform: translateX(-5px) scale(0.8);
 }
 
 @media screen and (min-width: 750px) {
@@ -463,6 +474,7 @@ nav ul a {
   .header .navbar .nav-list li:hover {
     font-family: "Barlow", sans-serif;
     background-color: transparent;
+    text-transform: capitalize;
   }
   .header .navbar .nav-list li:hover a {
     color: rgba(255, 255, 255, 0.8980392157);
@@ -472,7 +484,6 @@ nav ul a {
     padding: 0.9rem 1.7em;
     font-family: "Fraunces";
     text-transform: uppercase;
-    font-size: medium;
   }
   .header .navbar .nav-list .contact a {
     color: hsl(212, 27%, 19%);
@@ -480,6 +491,7 @@ nav ul a {
   .header .navbar .nav-list .contact:hover {
     background-color: hsla(0, 0%, 100%, 0.3);
     font-family: "Fraunces";
+    text-transform: uppercase;
   }
   .header .navbar .nav-list::before {
     display: none;
@@ -537,6 +549,20 @@ nav ul a {
   }
   .testimonials .flex-centered {
     flex-direction: row;
+  }
+}
+@media screen and (min-width: 800px) {
+  .header__hero-section {
+    position: relative;
+  }
+  .header__hero-section h1 {
+    margin-bottom: calc(4rem + 3vw);
+  }
+  .header__hero-section .arrow {
+    height: calc(5vh + 5vw);
+  }
+  .header__hero-section picture {
+    margin-top: -32rem;
   }
 }
 body,

@@ -58,6 +58,9 @@
       li:hover {
         background-color: u.$clr-yellow;
         font-family: u.$ff-accent;
+        text-transform: uppercase;
+        font-size: medium;
+
         a {
           color: u.$clr-secondary-500;
         }
@@ -95,12 +98,9 @@
     .arrow {
         z-index: 4;
         height: calc(10vh + 5vw);
-        position: absolute;
-        bottom: calc(5rem + 15vw);
     }
 
     picture {
-        background: greenyellow;
         margin-top: -23rem;
     }
   }

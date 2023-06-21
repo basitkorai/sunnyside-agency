@@ -1,6 +1,15 @@
 .nav__btn {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn {
+  scale: 1;
+  transition: scale 2000ms ease-in-out;
+}
+
+.btn:active {
+  transform:  translateX(-5px) scale(0.8);
 }
