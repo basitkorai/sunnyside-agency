@@ -52,6 +52,13 @@
       }
 
       li:hover {
+
+        a {
+          color: u.$clr-secondary-500;
+        }
+      }
+
+      .contact {
         background-color: u.$clr-yellow;
         font-family: u.$ff-accent;
         text-transform: uppercase;

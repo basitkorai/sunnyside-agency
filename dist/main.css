@@ -165,13 +165,16 @@ h2 {
 .header__navigation-bar .nav-list li a {
   color: hsl(213, 9%, 39%);
 }
-.header__navigation-bar .nav-list li:hover {
+.header__navigation-bar .nav-list li:hover a {
+  color: hsl(212, 27%, 19%);
+}
+.header__navigation-bar .nav-list .contact {
   background-color: hsl(51, 100%, 49%);
   font-family: "Fraunces";
   text-transform: uppercase;
   font-size: medium;
 }
-.header__navigation-bar .nav-list li:hover a {
+.header__navigation-bar .nav-list .contact a {
   color: hsl(212, 27%, 19%);
 }
 .header__navigation-bar .nav-list::before {
