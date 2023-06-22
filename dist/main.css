@@ -227,9 +227,6 @@ h2 {
   height: calc(10vh + 5vw);
   animation: float 2s ease-in-out infinite;
 }
-.header__hero-section picture {
-  margin-top: -23rem;
-}
 .header__logo-container {
   display: flex;
   justify-content: center;
