@@ -1,8 +1,8 @@
 @use "../utilities/" as u;
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 345px) {
   .header__hero-section {
     background: url(../assets/images/desktop/image-header.jpg) no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: bottom;
   }
 }
