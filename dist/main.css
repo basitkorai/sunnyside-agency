@@ -225,6 +225,7 @@ h2 {
 .header__hero-section .arrow {
   z-index: 4;
   height: calc(10vh + 5vw);
+  animation: float 2s ease-in-out infinite;
 }
 .header__hero-section picture {
   margin-top: -23rem;
@@ -233,6 +234,17 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@keyframes float {
+  0% {
+    transform: translateY(-1rem);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(-1rem);
+  }
 }
 
 .article {
