@@ -203,7 +203,7 @@ h2 {
   border-top-color: var(--nav-color);
   position: absolute;
   top: 0.5rem;
-  right: -35px;
+  right: -35.5px;
   transform: translateX(-39%) translateY(-49%) rotate(-45deg);
 }
 .header__navigation-bar .expanded {
@@ -467,7 +467,7 @@ nav ul a {
   transform: translateX(-5px) scale(0.8);
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 350px) {
   .header__hero-section {
     background: url(../assets/images/desktop/image-header.jpg) no-repeat;
     background-size: cover;
