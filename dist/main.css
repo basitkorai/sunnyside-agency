@@ -162,8 +162,8 @@ h2 {
   background-color: var(--nav-color);
   position: absolute;
   right: 0.5rem;
-  top: -26rem;
-  left: 3.6%;
+  top: -100rem;
+  left: 80%;
   margin-inline: auto;
   text-align: center;
   width: 85%;
@@ -172,7 +172,7 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  transition: top 250ms ease-out;
+  transition: all 250ms ease-out;
   padding-left: 0;
 }
 .header__navigation-bar .nav-list li {
@@ -213,6 +213,12 @@ h2 {
 .header__navigation-bar .nav-list .contact a {
   color: hsl(212, 27%, 19%);
 }
+.header__navigation-bar .nav-list .contact:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.header__navigation-bar .nav-list .contact:hover a {
+  color: hsl(212, 27%, 19%);
+}
 .header__navigation-bar .nav-list::before {
   content: "";
   border: 20px solid transparent;
@@ -224,6 +230,7 @@ h2 {
 }
 .header__navigation-bar .expanded {
   top: 6rem;
+  left: 3.6%;
 }
 .header__navigation-bar * {
   z-index: 9;
