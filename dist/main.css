@@ -184,9 +184,25 @@ h2 {
 }
 .header__navigation-bar .nav-list li a {
   color: hsl(213, 9%, 39%);
+  position: relative;
+}
+.header__navigation-bar .nav-list li:not(.contact) a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 0.2rem;
+  display: inline-block;
+  background: #23303e;
 }
 .header__navigation-bar .nav-list li:hover a {
   color: hsl(212, 27%, 19%);
+}
+.header__navigation-bar .nav-list li:hover a::after {
+  transition: width 0.35s ease-in;
+  width: 100%;
+  transform-origin: center;
 }
 .header__navigation-bar .nav-list .contact {
   background-color: hsl(51, 100%, 49%);

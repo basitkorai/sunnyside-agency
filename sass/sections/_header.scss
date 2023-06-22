@@ -71,12 +71,30 @@
 
         a {
           color: u.$clr-secondary-400;
+          position: relative;
         }
+      }
+
+      li:not(.contact) a::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 0.2rem;
+        display: inline-block;
+        background: #23303e;
       }
 
       li:hover {
         a {
           color: u.$clr-secondary-500;
+        }
+
+        a::after {
+          transition: width 0.35s ease-in;
+          width: 100%;
+          transform-origin: center;
         }
       }
 
