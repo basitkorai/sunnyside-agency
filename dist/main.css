@@ -194,7 +194,7 @@ h2 {
   width: 0;
   height: 0.2rem;
   display: inline-block;
-  background: #23303e;
+  background: hsl(51, 100%, 49%);
 }
 .header__navigation-bar .nav-list li:hover a {
   color: hsl(212, 27%, 19%);
