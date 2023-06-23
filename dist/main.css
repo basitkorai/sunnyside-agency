@@ -20,7 +20,6 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  padding-top: 5rem;
 }
 
 /*
@@ -88,13 +87,13 @@ h3 {
 
 h1 {
   color: white;
-  font-size: clamp(1.3rem, 1.5rem + 2vw, 3.4rem);
+  font-size: clamp(1.3rem, 1.5rem + 4vw, 3.4rem);
   text-transform: uppercase;
-  margin-top: 3rem;
+  margin-top: 10rem;
   letter-spacing: 0.5rem;
   word-spacing: 0.8rem;
   z-index: 4;
-  margin-bottom: 13rem;
+  margin-bottom: 3rem;
 }
 
 h2 {
@@ -498,9 +497,6 @@ nav ul a {
   }
 }
 @media screen and (min-width: 750px) {
-  body {
-    padding-top: 5.25rem;
-  }
   .header__navigation-bar {
     display: flex;
     justify-content: space-between;
@@ -566,10 +562,10 @@ nav ul a {
     display: none;
   }
   .header__hero-section {
-    min-height: 90vh;
+    min-height: 110vh;
   }
   .header__hero-section h1 {
-    margin-top: 3.5rem;
+    margin-top: 12.5rem;
   }
   .grid {
     display: grid;
