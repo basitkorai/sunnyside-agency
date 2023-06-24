@@ -57,7 +57,7 @@
         left: -8px;
         z-index: -1;
         border-radius: 50px;
-        transition: background-color 250ms ease-in;
+        transition: all 250ms ease-in;
       }
     }
 
@@ -67,6 +67,11 @@
 
     a:hover {
       --clr-opacity: 100%;
+
+      &::after {
+        background-color: hsl(51, 100%, 49%, var(--clr-opacity));
+        transform: translateY(15px);
+      }
     }
   }
 }

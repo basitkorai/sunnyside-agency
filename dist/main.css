@@ -331,13 +331,17 @@ h2 {
   left: -8px;
   z-index: -1;
   border-radius: 50px;
-  transition: background-color 250ms ease-in;
+  transition: all 250ms ease-in;
 }
 .article .column #link-red::after {
   background-color: hsl(7, 99%, 70%, var(--clr-opacity));
 }
 .article .column a:hover {
   --clr-opacity: 100%;
+}
+.article .column a:hover::after {
+  background-color: hsl(51, 100%, 49%, var(--clr-opacity));
+  transform: translateY(15px);
 }
 
 .services__photography {
