@@ -26,13 +26,17 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
+![](./screenshots/screen-desktop-light.png)
+as given in the design
 
-![](./screenshots/screen-desktop.png)
-![](./screenshots/screen-mobile.png)
+dark mode: additional feature added by me
+
+![](./screenshots/screen-desktop-dark.png)
+![](./screenshots/screen-mobile-dark.png)
 
 ### Links
 
-- Solution URL: [@updated this url](#)
+- Solution URL: [@FrontendMentor](https://www.frontendmentor.io/solutions/responsive-sunnyside-agency-landing-page-built-w-sass-NnDjFdqQlu)
 - Live Site URL: [I Live Here](https://basitkorai.github.io/sunnyside-agency/)
 
 ## My process
@@ -48,6 +52,12 @@ Users should be able to:
 
 ### Continued development
 - Improve UI
+- Refactor Code
+
+### Additional features (3)
+- Dark Mode
+- Hover underline animations on navigation links
+- Floating arrow animation
 
 <!-- ### Useful resources
 
