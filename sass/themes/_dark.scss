@@ -46,7 +46,7 @@
   /////////////////////////////
 
   .header {
-    background-color: hsl(200, 66%, 25%);
+    background-color: hsl(200, 61%, 32%);
 
     // .logo {
     //     scale: 1.2;
@@ -70,7 +70,7 @@
     }
 
     &__hero-section {
-      background-image: url("../assets/mobile-dark/image-header.png") !important;
+      background-image: url("../assets/mobile-dark/image-header.jpg") !important;
     }
   }
 
@@ -141,7 +141,7 @@
 
   @media (min-width: 350px) {
     .header__hero-section {
-      background-image: url("../assets/desktop-dark/image-header.png") !important;
+      background-image: url("../assets/desktop-dark/image-header.jpg") !important;
     }
   }
 
@@ -158,7 +158,7 @@
   }
 
   .dark-navbar {
-    background-color: hsl(200, 65%, 26%) !important;
+    background-color: hsl(200, 61%, 32%) !important;
 
     a {
       color: rgb(255, 255, 255) !important;
