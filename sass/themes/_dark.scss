@@ -1,0 +1,139 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #090526;
+  }
+
+  // TYPOGRAPHY
+
+  h1 {
+    color: #f1f500fd;
+  }
+  h2 {
+    color: rgb(0, 247, 255);
+  }
+
+  p:not(.testimonials p) {
+    color: rgb(170, 255, 0) !important;
+  }
+
+  a {
+    color: rgb(217, 255, 0) !important;
+
+    &::after {
+      transition: all 300ms ease-in-out !important;
+    }
+  }
+
+  a:not(.nav-link):hover {
+    color: rgb(0, 153, 255) !important;
+
+    &::after {
+      transform: translateY(15px);
+    }
+  }
+
+  /////////////////////////////
+
+  .header {
+    background-color: hsl(200, 66%, 25%);
+
+    // .logo {
+    //     scale: 1.2;
+    //     color: #1600be;
+    //   }
+
+    .contact {
+      background-color: #090526 !important;
+    }
+    .contact:hover {
+      background-color: initial !important;
+    }
+
+    &__hero-section {
+      background-image: url("../assets/mobile-dark/image-header.png") !important;
+    }
+  }
+
+  .transform {
+    background-image: url("../assets/mobile-dark/image-transform.png") !important;
+  }
+
+  .stand-out {
+    background-image: url("../assets/mobile-dark/image-stand-out.png") !important;
+  }
+
+  .services {
+    h2 {
+      color: rgb(0, 247, 255);
+    }
+
+    &__photography {
+      background-image: url("../assets/mobile-dark/image-photography.png");
+      color: rgb(255, 0, 55);
+    }
+
+    &__graphic-design {
+      background-image: url("../assets/mobile-dark/image-graphic-design.png");
+      color: rgb(255, 0, 55);
+    }
+  }
+
+  .testimonials {
+    h2 {
+      color: rgb(0, 247, 255);
+    }
+
+    &__review__feedback {
+      color: rgb(170, 255, 0);
+    }
+
+    &__review__client {
+      color: rgb(0, 153, 255);
+    }
+  }
+
+  .image-gallery {
+    .flex {
+      div {
+        position: relative;
+      }
+
+      div::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #09052688;
+        position: absolute;
+      }
+    }
+  }
+
+  .footer {
+    background-color: #090526;
+    color: rgb(0, 255, 136);
+    a {
+      color: gray !important;
+    }
+    a:hover {
+      color: rgb(0, 153, 255) !important;
+    }
+  }
+
+  @media (min-width: 350px) {
+    .header__hero-section {
+      background-image: url("../assets/desktop-dark/image-header.png") !important;
+    }
+  }
+
+  @media (min-width: 750px) {
+    .services {
+      &__photography {
+        background-image: url("../assets/desktop-dark/image-photography.png");
+      }
+
+      &__graphic-design {
+        background-image: url("../assets/desktop-dark/image-graphic-design.png");
+      }
+    }
+  }
+}

@@ -139,6 +139,10 @@ h2 {
 .header svg {
   color: blue;
 }
+.header .logo {
+  scale: 1.2;
+  color: white;
+}
 .header .navigation-bar-container {
   position: fixed;
   top: 0;
@@ -639,6 +643,104 @@ nav ul a {
 body,
 html {
   overflow-x: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #090526;
+  }
+  h1 {
+    color: rgba(241, 245, 0, 0.9921568627);
+  }
+  h2 {
+    color: rgb(0, 247, 255);
+  }
+  p:not(.testimonials p) {
+    color: rgb(170, 255, 0) !important;
+  }
+  a {
+    color: rgb(217, 255, 0) !important;
+  }
+  a::after {
+    transition: all 300ms ease-in-out !important;
+  }
+  a:not(.nav-link):hover {
+    color: rgb(0, 153, 255) !important;
+  }
+  a:not(.nav-link):hover::after {
+    transform: translateY(15px);
+  }
+  .header {
+    background-color: hsl(200, 66%, 25%);
+  }
+  .header .contact {
+    background-color: #090526 !important;
+  }
+  .header .contact:hover {
+    background-color: initial !important;
+  }
+  .header__hero-section {
+    background-image: url("../assets/mobile-dark/image-header.png") !important;
+  }
+  .transform {
+    background-image: url("../assets/mobile-dark/image-transform.png") !important;
+  }
+  .stand-out {
+    background-image: url("../assets/mobile-dark/image-stand-out.png") !important;
+  }
+  .services h2 {
+    color: rgb(0, 247, 255);
+  }
+  .services__photography {
+    background-image: url("../assets/mobile-dark/image-photography.png");
+    color: rgb(255, 0, 55);
+  }
+  .services__graphic-design {
+    background-image: url("../assets/mobile-dark/image-graphic-design.png");
+    color: rgb(255, 0, 55);
+  }
+  .testimonials h2 {
+    color: rgb(0, 247, 255);
+  }
+  .testimonials__review__feedback {
+    color: rgb(170, 255, 0);
+  }
+  .testimonials__review__client {
+    color: rgb(0, 153, 255);
+  }
+  .image-gallery .flex div {
+    position: relative;
+  }
+  .image-gallery .flex div::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 5, 38, 0.5333333333);
+    position: absolute;
+  }
+  .footer {
+    background-color: #090526;
+    color: rgb(0, 255, 136);
+  }
+  .footer a {
+    color: gray !important;
+  }
+  .footer a:hover {
+    color: rgb(0, 153, 255) !important;
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 350px) {
+  .header__hero-section {
+    background-image: url("../assets/desktop-dark/image-header.png") !important;
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 750px) {
+  .services__photography {
+    background-image: url("../assets/desktop-dark/image-photography.png");
+  }
+  .services__graphic-design {
+    background-image: url("../assets/desktop-dark/image-graphic-design.png");
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
