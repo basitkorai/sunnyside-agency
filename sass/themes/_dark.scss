@@ -170,4 +170,16 @@
       }
     }
   }
+
+@media (max-width: 750px) {
+  .nav-list:not(footer .nav-list) {
+    background-color: #090526 !important;
+    outline: #f7fc00 2px solid;
+    padding-block: 2rem !important;
+
+    &::before {
+      display: none;
+    }
+  }
+}
 }

@@ -19,9 +19,9 @@ window.addEventListener("scroll", () => {
     navbarContainerLower.classList.add('dark-navbar');
     navbarContainerUpper.classList.add('dark-navbar');
   } else {
-    navlist.style.paddingBlock = `0`;
     navbarContainerLower.classList.remove('dark-navbar');
     navbarContainerUpper.classList.remove('dark-navbar');
+    navlist.style.paddingBlock = '0';
   }
 
   if (currentScroll > lastScroll && !body.classList.contains('scroll-down')) {

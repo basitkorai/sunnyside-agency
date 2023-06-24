@@ -222,6 +222,12 @@ h2 {
 .header__navigation-bar .nav-list .contact:hover a {
   color: hsl(212, 27%, 19%);
 }
+@media (max-width: 750px) {
+  .header__navigation-bar .nav-list:not(footer .nav-list) {
+    padding-block: 2rem !important;
+    box-shadow: 13px 10px 100px 45px rgba(0, 0, 0, 0.2);
+  }
+}
 .header__navigation-bar .nav-list::before {
   content: "";
   border: 20px solid transparent;
@@ -766,6 +772,16 @@ html {
   }
   .dark-navbar .contact:hover a {
     color: rgb(166, 255, 0) !important;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 750px) {
+  .nav-list:not(footer .nav-list) {
+    background-color: #090526 !important;
+    outline: #f7fc00 2px solid;
+    padding-block: 2rem !important;
+  }
+  .nav-list:not(footer .nav-list)::before {
+    display: none;
   }
 }
 

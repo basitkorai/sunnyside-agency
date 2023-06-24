@@ -115,10 +115,18 @@
       }
 
       .contact:hover {
-        box-shadow: 13px 10px 100px 45px rgba(0,0,0,0.1);
+        box-shadow: 13px 10px 100px 45px rgba(0, 0, 0, 0.1);
         a {
           color: u.$clr-secondary-500;
         }
+      }
+    }
+
+    @media (max-width: 750px) {
+      .nav-list:not(footer .nav-list) {
+        padding-block: 2rem !important;
+        box-shadow: 13px 10px 100px 45px rgba(0, 0, 0, 0.2);
+        ;
       }
     }
 
