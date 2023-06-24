@@ -5,10 +5,7 @@
 
   // TYPOGRAPHY
 
-  h1 {
-    color: #f1f500fd;
-  }
-
+  h1,
   h2 {
     color: rgb(0, 247, 255);
   }
@@ -30,6 +27,7 @@
   .navigation-bar-container {
     background-color: hsl(247, 77%, 8%) !important;
   }
+
   .navigation-bar-container:not(.dark-navbar) {
     border-bottom: #f7fc00 2px solid;
   }
@@ -171,15 +169,15 @@
     }
   }
 
-@media (max-width: 750px) {
-  .nav-list:not(footer .nav-list) {
-    background-color: #090526 !important;
-    outline: #f7fc00 2px solid;
-    padding-block: 2rem !important;
+  @media (max-width: 750px) {
+    .nav-list:not(footer .nav-list) {
+      background-color: #090526 !important;
+      outline: #f7fc00 2px solid;
+      padding-block: 2rem !important;
 
-    &::before {
-      display: none;
+      &::before {
+        display: none;
+      }
     }
   }
-}
 }

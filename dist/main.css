@@ -154,7 +154,7 @@ h2 {
 .header__navigation-bar {
   display: flex;
   justify-content: space-between;
-  padding: 1.8rem;
+  padding: 1.1rem;
 }
 .header__navigation-bar .navbar {
   display: flex;
@@ -223,6 +223,10 @@ h2 {
   color: hsl(212, 27%, 19%);
 }
 @media (max-width: 750px) {
+  .header__navigation-bar .logo {
+    scale: 1;
+    color: white;
+  }
   .header__navigation-bar .nav-list:not(footer .nav-list) {
     padding-block: 2rem !important;
     box-shadow: 13px 10px 100px 45px rgba(0, 0, 0, 0.2);
@@ -655,9 +659,7 @@ html {
   body {
     background-color: #090526;
   }
-  h1 {
-    color: rgba(241, 245, 0, 0.9921568627);
-  }
+  h1,
   h2 {
     color: rgb(0, 247, 255);
   }
