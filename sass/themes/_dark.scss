@@ -8,6 +8,7 @@
   h1 {
     color: #f1f500fd;
   }
+
   h2 {
     color: rgb(0, 247, 255);
   }
@@ -16,11 +17,25 @@
     color: rgb(170, 255, 0) !important;
   }
 
-  a {
-    color: rgb(217, 255, 0) !important;
+  a:not(.nav-link) {
+    color: rgb(247, 0, 255) !important;
 
     &::after {
       transition: all 300ms ease-in-out !important;
+      opacity: 50%;
+    }
+  }
+
+  .header__navigation-bar, .navigation-bar-container {
+    background-color: #090526 !important;
+  }
+
+  .nav-link {
+    color: rgb(0, 153, 255) !important;
+
+    &::after {
+      transition: all 300ms ease-in-out !important;
+      opacity: 50%;
     }
   }
 
@@ -29,6 +44,7 @@
 
     &::after {
       transform: translateY(15px);
+      opacity: 100%;
     }
   }
 
@@ -43,10 +59,20 @@
     //   }
 
     .contact {
-      background-color: #090526 !important;
+      background-color: #f7fc00 !important;
+
+      a {
+        color: rgb(0, 0, 0) !important;
+      }
     }
+
     .contact:hover {
-      background-color: initial !important;
+      background-color: hsl(61, 100%, 49%, 10%) !important;
+
+
+      a {
+        color: rgb(0, 153, 255) !important;
+      }
     }
 
     &__hero-section {
