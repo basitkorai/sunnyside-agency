@@ -1,4 +1,7 @@
 // Selecting Elements
+const navbarContainerUpper = document.querySelector(".navigation-bar-container");
+const navbarContainerLower = document.querySelector('.header__navigation-bar');
+
 const navbar = document.querySelector("#navbar");
 const navToggleBtn = navbar.querySelector(".nav__btn");
 const navlist = navbar.querySelector(".nav-list");
@@ -13,8 +16,12 @@ window.addEventListener("scroll", () => {
   if (currentScroll <= 250) {
     body.classList.remove("scroll-up");
     navlist.style.paddingBlock = '2rem';
+    navbarContainerLower.classList.add('dark-navbar');
+    navbarContainerUpper.classList.add('dark-navbar');
   } else {
     navlist.style.paddingBlock = `0`;
+    navbarContainerLower.classList.remove('dark-navbar');
+    navbarContainerUpper.classList.remove('dark-navbar');
   }
 
   if (currentScroll > lastScroll && !body.classList.contains('scroll-down')) {
