@@ -66,7 +66,7 @@ dark mode: additional feature added by me
 
 ## Author
 
-- Website - work in progress
+- [Basit Korai](https://basitkorai.netlify.app) - a self-taught Full Stack Developer.
 - Frontend Mentor - [@basit-flash](https://www.frontendmentor.io/profile/basit-flash)
 - Twitter - [@basitxkorai](https://twitter.com/basitxkorai)
 
